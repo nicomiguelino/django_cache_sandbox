@@ -4,9 +4,13 @@
     <title>
         {% block title %} Caching in Django {% endblock title %}
     </title>
+
+    {% include "partials/library_includes.html" %}
 </head>
 <body>
-    {% block content %}
-    {% endblock content %}
+    <div class="container p-5">
+        {% block content %}
+        {% endblock content %}
+    </div>
 </body>
 </html>
